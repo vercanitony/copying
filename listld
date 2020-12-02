@@ -1,0 +1,21 @@
+<?php
+
+$dir_lends    = '/var/www/www-root/data/www/aloumre.com';
+$dir_domains	= '/var/www/www-root/data/www/';
+$lends = scandir($dir_lends);
+$domains = scandir($dir_domains);
+echo "<div class='lends'>";
+	foreach($lends as $list_lend){
+echo $list_lend."<br>";
+}
+echo "</div>";
+
+echo "<br><br>---Domains---<br><br>";
+
+echo "<div class='domains'>";
+				foreach($domains as $list_domain){
+echo $list_domain.'<br>';
+}
+echo "</div>";
+
+?>
